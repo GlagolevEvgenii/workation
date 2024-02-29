@@ -1,182 +1,114 @@
-@media (min-width: 480px) {
-    .swiper {
-        height: 777px;
+@media(max-width: 767px)and (min-device-pixel-ratio: 2),(max-width: 767px)and (-webkit-min-device-pixel-ratio: 2),(max-width: 767px)and (min-resolution: 192dpi),(max-width: 767px)and (min-resolution: 2dpx) {
+    .hero {
+        background-image:url("../img/tui-solo-female-travel-teaser@2x.avif")
     }
 }
 
-@media (min-width: 600px) {
-    .place-block {
-        flex-direction: row;
+@media(min-width: 768px)and (min-device-pixel-ratio: 2),(min-width: 768px)and (-webkit-min-device-pixel-ratio: 2),(min-width: 768px)and (min-resolution: 192dpi),(min-width: 768px)and (min-resolution: 2dpx) {
+    .hero {
+        background-image:url("../img/tui-solo-female-travel-teaser@2x.avif")
+    }
+}
+@media screen and (max-width: 767px) {
+    .mobile-menu {
+        display:block;
+    }
+    body {
+        margin-top:47px;
+        margin-bottom: 48px;
+    }
+    .hero {
+        background-image: url("../img/tui-solo-female-travel-teaser.avif")
+    }
+    .hero-title {
+        text-shadow:2px 2px 2px rgba(0,0,0,.27)
+    }
+    .nav-footer--link {
+        font-size:16px;
+    }
+    .section-content-image--wrapper {
+        overflow-x:scroll;
     }
 
-    .place-block-info {
-        max-width: 310px;
-        border-radius: 6px 0 0 6px;
-    }
-
-    .place-block-image picture, .place-block-image img {
-        border-radius: 0 6px 6px 0;
-    }
-
-    .swiper {
-        height: 756px;
+    .section-content-image--wrapper img {
+        width: 200%;
     }
 }
 
-@media (min-width: 776px) and (min-height: 600px) {
-    .footer {
-        justify-content: center;
-        height: 70px
+@media(min-width: 767px) {
+    .section--padding-top {
+        padding-top:60px;
+    }
+
+    .tips-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .tip-item--text{
+        max-width: 301px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .main-section {
-        background-position: center center
-    }
-
-    .main-section-title {
-        font-size: 50px
-    }
-
-    .main-section-title span {
-        font-size: 36px
-    }
-
-    .advice-wrap {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-row-gap: 0;
-    }
-
-    .static-image-wrap {
-        margin: 0 -60px 80px;
-    }
-
-    .detox-wrap {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .image-sea-wrapper {
-        margin: 0 -28px 80px;
-    }
-
-    .section-tip {
-        display: flex;
-        align-items: flex-start;
-        padding-left: 0
-    }
-
-    .section-tip__icon {
-        margin-bottom: 0;
-        display: flex;
-        justify-content: center;
-        flex-shrink: 0;
-        width: 92px;
-        position: relative;
-        top: -5px
-    }
-
-    .section-tip__icon_info {
-        top: 0
-    }
-
-    .hamburger {
-        top: 11px;
-        right: 52px
-    }
-
-    .section-bottom {
-        padding: 160px 0 200px;
-    }
-
-    .section {
-        padding: 80px 0;
-    }
-
-    .embed-image-wrapper {
-        overflow-x: hidden;
-    }
-
-    .embed-image-wrapper__image {
-        max-width: 100% !important;
-    }
-
-    .nav-footer--link {
-        font-size: 18px
-    }
-}
-
-@media (min-width: 999px) {
-    body {
-        margin: 90px 0 0;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .section-figure {
-        display: flex;
-        align-items: center
-    }
-
-    .section-figure img, .section-figure picture {
-        width: auto;
-    }
-
-    .section-figure__caption {
-        max-width: 552px;
-        position: absolute;
-        right: 16px;
-        padding: 50px;
-        bottom: 50px;
-    }
-
-    .nav {
-        display: flex;
-        align-items: center
-    }
-
-    .mobile-menu__bar {
-        display: none
-    }
-
-    .hamburger {
-        display: none
-    }
-
     .mobile-menu {
-        display: none;
+        height:40%;
     }
-
+    .mobile-menu__bar {
+        display:none;
+    }
+    .hamburger {
+        top:11px;
+        right: 52px;
+        display:none;
+    }
+    .container {
+        margin-left:auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .hero {
+        background-image:url("../img/tui-solo-female-travel-teaser.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 466px;
+    }
+    .logo-hero {
+        display:block;
+    }
+    .hero-title {
+        max-width:836px;
+        font-size: 50px;
+        line-height: 57px;
+    }
+    .nav {
+        display:-webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+@media(min-width: 1200px) {
     .section-title {
-        scroll-margin-top: 110px;
+        font-size:30px;
     }
-
-    .item-slider-content {
-        padding: 30px 40px;
+    .container {
+        max-width:1116px;
     }
-
-    .swiper {
-        height: 756px;
+    .hero {
+        background-image:url("../img/tui-solo-female-travel-teaser.avif");
     }
-
-}
-
-
-@media (min-width: 1200px) {
-    .section-title {
-        font-size: 30px;
+    .hero-title {
+        max-width:1100px;
     }
-
-    .regular-title {
-        font-size: 28px;
+    .nav-list--link {
+        line-height: 19px;
     }
 }
 
-@media (min-device-pixel-ratio: 2),(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
-    .main-section {
-        background-image: url(../images/header-wide@2x.webp)
+@media(min-width: 1200px)and (min-device-pixel-ratio: 2),(min-width: 1200px)and (-webkit-min-device-pixel-ratio: 2),(min-width: 1200px)and (min-resolution: 192dpi),(min-width: 1200px)and (min-resolution: 2dpx) {
+    .hero {
+        background-image:url("../img/tui-solo-female-travel-teaser.avif")
     }
 }
-
-
