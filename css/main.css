@@ -226,15 +226,16 @@
     font-weight: 700;
     line-height: 1.1;
     text-align: center;
-    margin-bottom: 33px;
+    margin-bottom: 40px;
     padding-top: 45px;
     scroll-margin-top: 40px;
 }
 
 .section-subtitle {
     font-size: 22px;
+    line-height: 28px;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
     scroll-margin-top: 80px;
 }
 
@@ -327,7 +328,7 @@ strong {
 .hero {
     height: 310px;
     background-color: #e2f3fe;
-    background-image: url("../img/in-deinem-tempo-um-die-welt-reisen.avif");
+    background-image: url("../img/tui-teaser-workation.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top,right
@@ -355,7 +356,7 @@ strong {
 .hero-title {
     width: 100%;
     font-size: 33px;
-    padding-bottom: 59px;
+    padding-bottom: 61px;
     letter-spacing: 1px;
     line-height: 1.1;
     color: #fff;
@@ -393,11 +394,7 @@ strong {
 .nav-list--item {
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
-    margin-right: 36px;
     display: inline-block;
-}
-.nav-list--item:last-of-type {
-    margin-right: 0;
 }
 
 .nav-list--item:hover,.nav-list--item:focus {
@@ -409,8 +406,7 @@ strong {
     align-items: center;
     font-size: 18px;
     padding: 13px 0;
-    letter-spacing: normal;
-    font-weight: 700;
+    letter-spacing: 0;
 }
 
 .embed {
@@ -499,8 +495,14 @@ strong {
     color: #70cbf4
 }
 
+.mb-30 {
+    margin-bottom: 35px
+}
 .mb-45 {
     margin-bottom: 45px
+}
+.mb-60 {
+    margin-bottom: 60px
 }
 
 .prg-button {
@@ -511,38 +513,6 @@ strong {
     background-color: rgba(0,0,0,0);
     cursor: pointer
 }
-.tips-wrapper{
-    padding: 30px 0 85px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 68px;
-    grid-row-gap: 60px;
-}
-.tip-item{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-.tip-item--img{
-    width: 52px;
-    height: 52px;
-    margin-bottom: 30px;
-}
-.tip-item--title{
-    color: #092A5E;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 26px;
-    margin-bottom: 38px;
-}
-.tip-item--text{
-    color: #092A5E;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-}
+
 
 
