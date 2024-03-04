@@ -15,7 +15,6 @@
     }
     body {
         margin-top:47px;
-        margin-bottom: 48px;
     }
     .hero {
         background-image: url("../img/tui-teaser-workation.avif")
@@ -45,6 +44,15 @@
     }
     .tip-item--text{
         max-width: 301px;
+    }
+    .section-gray{
+        padding-top: 200px;
+    }
+    .flag-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .flag-wrapper{
+        grid-row-gap: 0;
     }
 }
 
@@ -110,5 +118,20 @@
 @media(min-width: 1200px)and (min-device-pixel-ratio: 2),(min-width: 1200px)and (-webkit-min-device-pixel-ratio: 2),(min-width: 1200px)and (min-resolution: 192dpi),(min-width: 1200px)and (min-resolution: 2dpx) {
     .hero {
         background-image:url("../img/tui-teaser-workation.avif")
+    }
+}
+@media(min-width: 1199px) {
+    .radio {
+        max-width:952px;
+        padding:4px 0px;
+        margin-bottom:20px;
+        height:45px;
+        padding:4px 0px
+    }
+    .radio input:checked {
+        height:45px;
+        margin-top:-5px;
+        padding-top:8px;
+        font-weight:700
     }
 }
