@@ -3,7 +3,7 @@ const embedEngine = {
         embedEngine.binds();
     },
     binds() {
-
+        let scrollToTopBtn = document.querySelector(".scrollup");
         document.querySelectorAll(".embed-button").forEach((e) => {
             e.addEventListener("click", embedEngine.embedBox);
         });
@@ -38,10 +38,21 @@ const embedEngine = {
                 document.documentElement.scrollTop > 466
             ) {
                 document.querySelector(".nav").classList.add("nav--sticky");
+                scrollToTopBtn.classList.add("showBtn");
             } else {
                 document.querySelector(".nav").classList.remove("nav--sticky");
+                scrollToTopBtn.classList.remove("showBtn");
             }
         }
+        function scrollToTop() {
+            document.querySelector(".hero").scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        scrollToTopBtn.addEventListener("click", scrollToTop);
     },
 };
 document.addEventListener("DOMContentLoaded", embedEngine.init);
